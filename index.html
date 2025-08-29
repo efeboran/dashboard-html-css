@@ -1,186 +1,291 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <div class="main-card row">
-      <div class="col-sm-3">
-        <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
-          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-            <svg class="bi me-2" width="40" height="32">
-              <use xlink:href="#bootstrap"></use>
-            </svg>
-            <span class="fs-4">Traveloo</span>
-          </a>
-          <hr>
-          <ul class="nav nav-pills flex-column mb-auto">
-            <li class="nav-item">
-              <a href="#" class="nav-link active" aria-current="page">
-                <svg class="bi me-2" width="16" height="16">
-                  <use xlink:href="#home"></use>
-                </svg> Traveloo </a>
-                <li class="nav-item">
-              <a href="#" class="nav-link active" aria-current="page">
-                <svg class="bi me-2" width="16" height="16">
-                  <use xlink:href="#home"></use>
-                </svg> Home </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+  <!-- Font Awesome ikon paketi -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <title>TravelXpress Dashboard</title>
+</head>
+
+<body>
+  <div class="main-card row">
+    <!-- Sol Menü -->
+    <div class="col-sm-3">
+      <div class="row">
+        <img src="./assets/left-logo.jpg" width="200px">
+        <span class="brand-name">TravelXpress</span>
+      </div>
+      <div class="row">
+        <div class="middle">
+          <ul class="menus">
+            <li class="item" id="profile">
+              <a href="#profile"><i class="fa-solid fa-user"></i>Dashboard</a>
+              <div class="sub-menus">
+                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Posts</a>
+                <a href="#"><i class="fa-regular fa-image"></i> Picture</a>
+              </div>
             </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi me-2" width="16" height="16">
-                  <use xlink:href="#speedometer2"></use>
-                </svg> Dashboard </a>
+
+            <li class="item" id="notifications">
+              <a href="#notifications">🔔</i> Notifications</a>
+              <div class="sub-menus">
+                <a href="#"><i class="fa-solid fa-circle"></i> New</a>
+                <a href="#"><i class="fa-regular fa-envelope-open"></i> Read</a>
+                <a href="#"><i class="fa-solid fa-trash"></i> Archived</a>
+              </div>
             </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi me-2" width="16" height="16">
-                  <use xlink:href="#table"></use>
-                </svg> My Tickets </a>
+
+            <li class="item" id="tickets">
+              <a href="#tickets">🎫</i> My Tickets</a>
+              <div class="sub-menus">
+                <a href="#"><i class="fa-solid fa-plus"></i> Create</a>
+                <a href="#"><i class="fa-solid fa-list"></i> Active</a>
+                <a href="#"><i class="fa-solid fa-check"></i> Closed</a>
+              </div>
             </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi me-2" width="16" height="16">
-                  <use xlink:href="#grid"></use>
-                </svg> Destinations</a>
+
+             <li class="item" id="settings">
+              <a href="#settings">⚙️</i>Settings</a>
+              <div class="sub-menus">
+                <a href="#"><i class="fa-solid fa-plus"></i>Privacy</a>
+                <a href="#"><i class="fa-solid fa-list"></i>General Settings</a>
+                <a href="#"><i class="fa-solid fa-check"></i>Change Information</a>
+              </div>
             </li>
-            <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi me-2" width="16" height="16">
-                  <use xlink:href="#people-circle"></use>
-                </svg> Customers </a>
+
+            <li class="item">
+              <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
             </li>
+            <li class="item">
+
+            </li>
+            <div class="airplane-container">
+              <img src="./assets/ucak.jpg" alt="uçak resmi" class="airplane-image">
+              <div class="overlay-text">Save up to %50 discount</div>
+            </div>
           </ul>
-          <hr>
-          <div class="dropdown">
-            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="<img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-              <strong>Efe Boran Yılmaz</strong>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-              <li>
-                <a class="dropdown-item" href="#">New project...</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">test</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Profile</a>
-              </li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Sign out</a>
-              </li>
-            </ul>
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="col-sm-6 center-card">
+      <div class="header-content">
+        <div class="greeting-text">
+          <span class="greeting">Hello, Efe Boran!👋</span><br>
+          <span class="caption-text">Are you ready to explore the world?</span>
+        </div>
+        <div class="search-wrapper">
+          <input type="text" class="form-control search-bar" placeholder="Search destinations">
+          <button class="search-icon-btn" type="submit">&#x1F50D;</button>
+        </div>
+      </div>
+
+
+
+      <!-- Destinations örnekleri -->
+      <div class="p-destinations-row mt-4 d-flex justify-content-between">
+        <div class="p-destinations">
+          <img src="./assets/dubai.jpg" class="img-fluid">
+          <div class="bottom-left">Dubai</div>
+        </div>
+        <div class="p-destinations">
+          <img src="./assets/moskova.jpg" class="img-fluid">
+           <div class="bottom-left">Moscow</div>
+        </div>
+        <div class="p-destinations">
+          <img src="./assets/prag.jpeg" class="img-fluid">
+           <div class="bottom-left">Prague</div>
+        </div>
+      </div>
+
+      <br><br>
+      <div class="col-sm-6">
+        
+        <h5 class="best-destinations-title">Best Destinations</h5>
+        <ul class="best-destinations-list list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <img src="./assets/bigben.jpg" class="small-dest-img me-3">
+              <div>
+                <h6 class="m-0">London</h6>
+                <small class="text-muted">📍United Kingdom</small>
+              </div>
+            </div>
+            <span class="fw-bold price-tag">$150/day</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <img src="./assets/eyfel.jpg" class="small-dest-img me-3">
+              <div>
+                <h6 class="m-0">Paris</h6>
+                <small class="text-muted">📍France</small>
+              </div>
+            </div>
+            <span class="fw-bold price-tag">$180/day</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <img src="./assets/ny.jpeg" class="small-dest-img me-3">
+              <div>
+                <h6 class="m-0">New York</h6>
+                <small class="text-muted">📍United States</small>
+              </div>
+            </div>
+            <span class="fw-bold price-tag">$140/day</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <div class="row">
+          
+        </div>
+        <div class="friends-container">
+          <img src="./assets/friends.jpg" class="friends-p">
+          <div class="friends-text">Travelling with friends is so much fun!<div>
+              <button class="book-button">Book Now</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-5">
-        <span>Hello Efe Boran</span>
-        <br>
-        <span class="caption-text">Are you ready to explore the world?</span>
-        <br><br><br><br><br>
-        <span>Best Destinations</span> <br><br>
-        <p>London</p>
-        <p class="country-name"><p>&#128205;England</p>
-        <p>Paris</p>
-        <p class="country-name"><p>&#128205;France</p>
-        <p>New York</p>
-        <p class="country-name"><p>&#128205;United States</p>
-      </div> 
-        <div class="col-sm-3">
-      <span>Efe Boran Yılmaz </span> <br><br><br>
-      <span>My Schedule</span> <br><br>
-      <p>Bangkok</p>
-<p class="trip-dates"><p>&#128197;12-25 Oct</p>
 
-<p>India</p>
-<p class="trip-dates"><p>&#128197;14-29 Jan</p>
+    </div>
 
-<p>Mexico</p>
-<p class="trip-dates"><p>&#128197;5-21 Jun</p>
-       <br><br><br>
-      <span>My Calendar</span> <br><br><br>
-      <h3>Eylül 2025</h3>
-<table border="1" cellpadding="10">
-  <tr>
-    <th>Pzt</th>
-    <th>Sal</th>
-    <th>Çar</th>
-    <th>Per</th>
-    <th>Cum</th>
-    <th>Cmt</th>
-    <th>Paz</th>
-  </tr>
-  <tr>
-    <td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td>
-  </tr>
-  <tr>
-    <td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
-  </tr>
-  <tr>
-    <td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
-  </tr>
-  <tr>
-    <td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
-  </tr>
-  <tr>
-    <td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td></td><td></td>
-  </tr>
-</table>
 
-    
-    </div>
-    </div>
-  
-    </div>
-  </body>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+    <!-- Sağ Panel -->
+    <div class="col-sm-3">
+      <div class="user-profile">
+        <img src="assets/profil.jpeg" class="profile-image">
+
+        <small style="font-weight: 600; display: inline-flex; align-items: center;">
+          Efe Boran Yılmaz
+          <i class="fa-solid fa-chevron-down" style="margin-left: 50px;"></i>
+        </small>
+        <br><br>
+      </div>
+
+
+      </span style="display: inline-flex; align-items: center; font-weight: 600;">
+      My Schedule
+      <i class="fa-solid fa-ellipsis" style="margin-left: 140px;"></i>
+      </span>
+      <br><br>
+
+      <div class="schedule-item d-flex mb-2">
+        <img class="schedule-icon" src="./assets/wien.jpg">
+        <div class="item-text ml-2">
+          <p>Wien</p>
+          <p class="trip-dates">📅12-25 Oct</p>
+        </div>
+      </div>
+
+      <div class="schedule-item d-flex mb-2">
+        <img class="schedule-icon" src="./assets/nap.jpg">
+        <div class="item-text ml-2">
+          <p>Naples</p>
+          <p class="trip-dates">📅14-29 Jan</p>
+        </div>
+      </div>
+
+
+      <div class="schedule-item d-flex mb-2">
+        <img class="schedule-icon" src="./assets/copen.jpg">
+        <div class="item-text ml-2">
+          <p>Copenhagen</p>
+          <p class="trip-dates">📅5-21 Jun</p>
+        </div>
+      </div>
+
+      <br><br><br>
+
+      <div class="calendar-header">
+        <h2 class="calendar-title">My Calendar</h2>
+      </div>
+      <div class="calendar">
+        <div class="calendar-header">
+          <div class="month-year">September 2025 </div>
+        </div>
+
+        <div class="month-navigation">
+          <button class="prev-month">&lt;</button>
+          <button class="next-month">></button>
+        </div>
+
+
+
+
+        <div class="weekdays d-flex justify-content-between">
+          <div class="weekday">Mon</div>
+          <div class="weekday">Tue</div>
+          <div class="weekday">Wed</div>
+          <div class="weekday">Thu</div>
+          <div class="weekday">Fri</div>
+          <div class="weekday">Sat</div>
+          <div class="weekday">Sun</div>
+        </div>
+        <div class="days-grid d-flex flex-wrap">
+          <div class="day other-month">28</div>
+          <div class="day other-month">29</div>
+          <div class="day other-month">30</div>
+          <div class="day other-month">31</div>
+          <div class="day">1</div>
+          <div class="day">2</div>
+          <div class="day">3</div>
+          <div class="day">4</div>
+          <div class="day">5</div>
+          <div class="day">6</div>
+          <div class="day">7</div>
+          <div class="day">8</div>
+          <div class="day">9</div>
+          <div class="day">10</div>
+          <div class="day selected-start">11</div>
+          <div class="day selected-range">12</div>
+          <div class="day selected-range">13</div>
+          <div class="day selected-range">14</div>
+          <div class="day selected-range">15</div>
+          <div class="day selected-range">16</div>
+          <div class="day selected-range">17</div>
+          <div class="day selected-range">18</div>
+          <div class="day selected-range">19</div>
+          <div class="day selected-range">20</div>
+          <div class="day selected-range">21</div>
+          <div class="day selected-range">22</div>
+          <div class="day selected-range">23</div>
+          <div class="day selected-range">24</div>
+          <div class="day selected-range">25</div>
+          <div class="day selected-range">26</div>
+          <div class="day selected-range">27</div>
+          <div class="day selected-range">28</div>
+          <div class="day selected-end">29</div>
+          <div class="day">30</div>
+          <div class="day">31</div>
+          <div class="day other-month">1</div>
+          <div class="day other-month">2</div>
+          <div class="day other-month">3</div>
+          <div class="day other-month">4</div>
+          <div class="day other-month">5</div>
+          <div class="day other-month">6</div>
+          <div class="day other-month">7</div>
+        </div>
+      </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+
 </html>
-<style>
-  .main-card {
-    margin: 5rem;
-    padding: 5rem;
-    background-color: white;
-    border-radius: 18px;
-  }
-
-  body {
-    background-color: aquamarine;
-  }
-
-  .b-example-divider {
-    flex-shrink: 0;
-    width: 1.5rem;
-    height: 100vh;
-    background-color: rgba(184, 168, 168, 0.37);
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
-    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-  }
-
-  .caption-text {
-    font-size: 14px;
-    font-weight: 300;
-  }
-
-
-  .trip-dates {
-    font-size: 14px; 
-    font-weight: 250;
-}
-
-
-  .country-name {
-    font-size: 14px;
-    font-weight: 250;
-  }
-</style>

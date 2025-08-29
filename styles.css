@@ -1,0 +1,714 @@
+
+  .main-card{
+    margin: 70px 50px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 18px;
+  }
+  
+  body {
+    background-color: #d4e9f6;
+  }
+
+  .b-example-divider {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+    background-color: rgba(184, 168, 168, 0.37);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .caption-text {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+
+  .trip-dates {
+    font-size: 14px; 
+    font-weight: 250;
+}
+
+
+  .country-name {
+    font-size: 14px;
+    font-weight: 250;
+  }
+
+.middle {
+    position: absolute;
+    left: 30%;
+    top: 40%;
+  }
+  
+.end {
+    position: absolute;
+    left: 10%;
+    top: 70%;
+  }
+.menus {
+	 border-radius: 18px;
+	 transform: translate(-50%, -27%);
+	 width: 300px;
+	 overflow: hidden;
+	 list-style: none; 
+	 padding: 0;
+	 margin: 0;
+}
+.menus a {
+	 display: block;
+	 padding: 20px 10px;
+	 position: relative;
+	 color: rgb(91, 91, 91);
+	 text-decoration: none;
+}
+.menus .item {
+	 list-style: none; 
+}
+.menus .item > a {
+	 transition: background 0.3s;
+}
+.menus .item > a:hover {
+    background: #3498db;
+    border-radius: 18px;
+    color: white;
+}
+.menus .item > a i {
+	 margin-right: 10px;
+}
+.menus .item > a:before {
+	 content: '';
+	 width: 14px;
+	 height: 14px;
+	 position: absolute;
+	 left: 20px;
+	 bottom: -7px;
+	 background: #3498db;
+	 transform: rotate(45deg);
+	 visibility: hidden;
+}
+.menus .item:target > a:before {
+	 visibility: visible;
+}
+.menus .item:target .sub-menus {
+	 max-height: 10em;
+}
+.sub-menus {
+	 background: #333;
+	 overflow: hidden;
+	 transition: max-height 0.3s;
+	 max-height: 0;
+	 list-style: none; 
+	 padding: 0;
+	 margin: 0;
+}
+.sub-menus a {
+	 font-size: 14px;
+	 padding: 16px 26px;
+	 margin-top: 4px;
+	 position: relative;
+	 text-decoration: none;
+}
+.sub-menus a:before {
+	 content: '';
+	 width: 6px;
+	 height: 100%;
+	 background: #3498db;
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+	 transition: 0.3s;
+	 opacity: 0;
+}
+.sub-menus a:hover:before {
+	 opacity: 1;
+   
+   
+}
+.greeting {
+   transition: all 0.3s ease;
+   display: inline-block; 
+   padding: 5px 10px;
+   border-radius: 5px;
+   background-color: transparent; 
+   }
+   .greeting-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.greeting:hover {
+   color: #3498db;
+   transform: scale(1.1);
+   cursor: pointer;
+   background-color: white; /
+}
+
+
+.best-destinations-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    height: auto;
+    margin-top: 40px;
+}
+
+
+.best-destinations-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.best-destinations-list .list-group-item {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+     display: flex; 
+    align-items: center; 
+    margin-top: 100px;
+}
+
+
+
+
+.best-destinations-list .list-group-item:last-child {
+    border-bottom: none;
+}
+
+
+  .small-dest-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-left: -30px;
+  flex-shrink: 0;
+}
+
+
+.best-destinations-list .list-group-item:hover {
+    background-color: #f0f0f0; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    
+}
+.best-destinations-list {
+  border: 1px solid #e0e0e0; 
+  border-radius: 12px;     
+  background-color: #fdfdfd; 
+  padding: 15px;
+  margin-left: 10px;  
+  margin-right: auto; 
+  max-width: 400px; 
+  width: 100%;  
+   
+ 
+}
+
+.price-tag {
+    color: #3867d6; 
+}
+
+.schedule-item {
+    display: flex; 
+    align-items: center;
+    gap: 15px; 
+    margin-bottom: 20px; 
+    
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    border-radius: 8px;
+    background-color: #f9f9f9; 
+   
+    transition: all 0.3s ease; 
+}
+
+
+.schedule-item:hover {
+    background-color: #e6f7ff; 
+    transform: scale(1.02); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.schedule-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    }
+
+
+  .body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  margin: 0;
+  }
+
+.calendar {
+  width: 365px; 
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.calendar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.month-year {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2c3e50;
+  text-transform: capitalize;
+}
+
+
+.weekdays {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #7f8c8d;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.weekday {
+  flex: 1;
+}
+
+
+.days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #34495e;
+}
+
+
+.day:hover {
+  background-color: #ecf0f1;
+  color: #2980b9;
+}
+
+
+.day.other-month {
+  color: #bdc3c7;
+}
+
+
+.day.selected,
+.day.selected-range {
+  
+  color: #34495e;
+  
+  border-radius: 0;
+}
+
+.day.selected-start {
+  background-color:#2e86de;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.day.selected-end {
+    background-color:#2e86de;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
+.day.selected-range {
+  background-color: #e0f2ff
+}
+
+.day.selected-range:hover {
+ 
+  color: #34495e;
+}
+.day.current-day {
+  
+  color: #34495e;
+}
+
+.day.current-day:hover {
+ 
+  color: #fff;
+}
+
+  .user-profile:hover {transition: all 0.3s ease;
+   color: #3498db;
+   transform: scale(1.1);
+   cursor: pointer;
+   background-color: white; /
+}
+    
+.user-profile:hover span,
+.user-profile:hover small {transition: all 0.3s ease;
+   display: inline-block; 
+   padding: 5px 10px; 
+   border-radius: 5px; 
+   background-color: rgb(214, 214, 240); 
+}
+
+.profile-image {
+  width: 85px;  
+  height: 85px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+.p-destinations-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; 
+  margin-top: 10px;
+}
+
+.p-destinations {
+  flex: 0 1 calc(33.333% - 20px); 
+  max-width: 200px;
+  border-radius: 12px;
+  color:white;
+  position: relative;
+  font-weight: bolder;
+
+
+}
+
+
+.p-destinations img {
+  width: 100%;
+  height: 130%;
+  object-fit: cover;
+  border-radius: 10px;
+  
+}
+
+.p-destinations::after {
+  content: '';
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 120%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%);
+  z-index: 1; /* Metnin altında kalması için */
+  border-radius: 10px;
+}
+
+
+
+.p-destinations:hover {
+  transform: translateY(-5px); 
+
+}
+
+.p-destinations:hover img {
+  transform: scale(1.05); 
+
+}
+  .rating-number {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+  font-weight: 600;
+}
+
+.p-destinations {
+  flex: 0 1 200px;  
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+ padding: 10px;
+}
+
+.center-card-wrapper {
+  background-color: transparent; 
+  border-radius: 25px;       
+  padding: 30px;   
+   max-width: 900px;    
+  margin: 0 auto;  
+  max-height: 700px;          
+}
+.center-card {
+  text-align: center;
+      border-radius: 18px;
+  background-color: #e9f3fb;
+}
+
+
+
+.header-content{
+ display: flex;
+justify-content: space-between; 
+ align-items: center;
+padding: 20px;
+}
+
+
+.search-wrapper {
+display: flex; 
+ gap: 10px; 
+flex-grow: 1;
+justify-content: flex-end; 
+}
+
+
+.search-bar {
+max-width: 250px; 
+border: 1px solid #dcdcdc;    
+ border-radius: 25px; 
+padding: 10px 20px;
+font-size: 14px;
+color: #333;
+transition: all 0.3s ease;
+ outline: none;
+}
+
+
+.search-bar:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 60px;
+    padding: 5px 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+.airplane-image {
+  display: block;
+  width: 300px;
+  height: 400px; 
+  margin-top: 120px; 
+  border-radius: 50px;
+ }
+ 
+  .overlay-text {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+.airplane-container {
+  position: relative;
+  display: inline-block;
+  }
+.side-photo {
+  text-align: right;
+}
+
+  .side-photo img {
+  display:inline-block;
+  width: 300px;     
+  margin-top: 140px; 
+  border-radius: 50px;
+  object-fit: cover;  
+  }
+
+  .side-photo{
+  max-width: 300px;       
+  height: auto;          
+  border-radius: 16px;    
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  display: block;
+  margin: 0 auto;        
+
+
+}
+
+.friends-container {
+ text-align: center;
+ padding: 10px; 
+ position: absolute;
+ margin-left: 10em;
+ margin-top: 10em;;
+}
+
+.friends-text {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  height: auto;
+  max-width: 100%; 
+}
+
+.friends-p {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; 
+  border-radius: 50%;
+  margin-left: 120px;
+  margin-top: -1150px
+}
+
+
+.friends-text {
+margin-top: 40px;
+font-size: 16px;
+color: #333;
+font-weight: bold;
+ margin-left: 400px;
+ margin-top: -470px
+}
+
+
+.book-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #0056b3;
+}
+
+
+.calendar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.calendar-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+.month-navigation {
+  display: flex;
+  margin-left: 270px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  gap: 4px;
+}
+.brand-name {
+    font-family: Arial, sans-serif;
+    font-size: 1.6em; 
+    margin-left: 17px;
+    gap: 10px;
+    }
+
+    .best-destinations-title {
+  text-align: left;
+  margin-left: 15px;
+}
+
+.search-icon-btn {
+  position: absolute;
+  top: 50%;
+  left: 160px;
+  transform: translateY(-50%);
+  background: none; 
+  border: none; 
+  color: #888;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0; 
+}
+.search-wrapper {
+  position: relative;
+  
+  width: 300px;
+}
+
+.form-control {
+  width: 100%;
+  padding-left: 35px; 
+  height: 40px; 
+}
+.bottom-left {
+  position: absolute;
+  top: 161px;
+  left: 16px;
+  z-index: 2; /* Resmin ve gradyanın üzerinde olmalı */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+
+
+   
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
